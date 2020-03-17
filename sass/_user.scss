@@ -1,0 +1,211 @@
+#perfil{
+    position: relative;
+    height: 66rem;
+    display: none;
+
+    .box-perfil{
+        width: 100%;
+        height: 100%;
+        //justify-content: space-between;
+        
+        .burger{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .tomate1{
+            position: absolute;
+            width: 6vw;
+            left: 50px;
+            bottom: 200px;
+            transform: rotate(210deg);
+        }
+
+        .tomate2{
+            position: absolute;
+            width: 8vw;
+            left: 20px;
+            bottom: 50px;
+        }
+
+        .perfil{
+            text-align: center;
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 0 1.5rem;
+            flex: 1 1 25%;
+            max-width: 25%;
+            align-self: center;
+
+            .img-perfil{
+               width: 100%;
+
+                img{
+                    border-radius: 50%;
+                    height: 15rem;
+                    width: 15rem;
+                    margin: 0 auto;
+                }
+            }
+
+            .nombre-perfil{
+                flex: 1 1  100%;
+                padding: 1.5rem 0;
+                margin-bottom: 2rem;
+
+                h5{
+                    font-size: 2rem;
+                }
+
+                small{
+                    display: block;
+                    text-transform: uppercase;
+                    color: #B7B6B6;
+                    padding-top: .5rem;
+                }
+            }
+
+            .btn-cerrar-sesion{
+                border: 1.5px solid var(--c-1);
+                border-radius: 5px;
+                color: var(--c-3);
+                display: block;
+                font-size: 1.5rem;
+                line-height: 4rem;
+                margin: 0 auto;
+                height: 4rem;
+                width: 13.5rem;
+                transition: all .4s ease;
+
+                &:hover{
+                    background-color: var(--c-2);
+                    color: white;
+                    border: 1.5px solid rgb(62, 15, 66);
+                }
+            }
+        }
+
+        .separador{
+            display: flex;
+            flex: 1 1 8.333333%;
+            max-width: 8.333333%;
+            justify-content: center;
+
+            &::before{
+                content: "";
+                margin: auto 0;
+                display: block;
+                width: 3px;
+                height: 50%;
+                background-color: var(--c-2);
+                box-shadow: -2px 0 8px rgba(#333, .3);
+            }
+        }
+
+        .datos{
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 0 1.5rem;
+            flex: 1 1 41.666667%;
+            max-width: 41.666667%;
+            align-self: center;
+
+            .comida-favorita{
+                h4{
+                    color: var(--c-2);
+                    font-size: 2.5rem;
+                }
+
+                .texto-gusto{
+                    font-size: 1.5rem;
+                    line-height: 2.3rem;
+                    padding-top: 1.5rem;
+                    padding-bottom: 3rem;
+                }
+
+                .intereses{
+                    display: flex;
+                    width: auto;
+    
+                    .icon-interes{
+                        flex: 1 1 25%;
+                        max-width: 25%;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 1.5rem;
+    
+                        i{
+                            font-size: 2.5rem;
+                            display: block;
+                            margin: 0 auto;
+                            padding-bottom: .5rem;
+                            color: var(--c-2);
+                        }
+    
+                        p{
+                            font-size: 1.2rem;
+                            text-align: center;
+                        }
+    
+                        &:first-child{
+                            padding-left: 0 ;
+                        }
+                    }
+                }
+            }
+
+            .contenedor{
+                display: flex;
+                width: 100%;
+                padding-top: 3rem;
+    
+                .box-puntos{
+                    flex: 1 1 75%;
+    
+                    .mis-puntos{
+                        color: var(--c-2);
+                        font-size: 2rem;
+                    }
+    
+                    .cantidad-puntos{
+                        font-family: var(--ff-title);
+                        font-size: 8rem;
+    
+                        span{
+                            font-size: 3rem;
+                            font-family: var(--ff-title);
+                        }
+                    }
+    
+                    small{
+                        color: #B7B6B6;
+                        font-size: 1.2rem;
+                    }
+                }
+    
+                .box-btn{
+                    flex: 1 1 25%;
+                    display: flex;
+                    align-items: center;
+    
+                    .btn-canje-puntos{
+                        align-content: flex-end;
+                        border: 1.5px solid var(--c-1);
+                        border-radius: 5px;
+                        color: var(--c-3);
+                        display: block;
+                        font-size: 1.5rem;
+                        line-height: 4rem;
+                        //margin: 0 auto;
+                        height: 4rem;
+                        width: 13.5rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}

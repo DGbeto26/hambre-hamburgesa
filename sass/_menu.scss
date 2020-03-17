@@ -1,0 +1,179 @@
+//menu
+#menu{
+    position: relative;
+    height: 130vh;
+    min-height: 106rem;
+    display: none;
+    
+
+    .img-menu{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    
+    .menu{
+        width: 100%;
+        padding-top: 8rem;
+        
+
+        //menu clasico
+
+        .menu-clasico{
+            flex: 1 1 50%;
+            max-width: 50%;
+            text-align: left;
+
+            //titulo - menu clasico
+            .titulo-menu{
+                color: var(--c-2);
+                font-size: 5rem;
+                font-family: var(--ff-title);
+                margin-bottom: 8.5rem;
+
+                &::after{
+                    content: "";
+                    background-color: var(--c-2);
+                    display: block;
+                    height: 1rem;
+                    width: 13rem;
+                }
+            }
+
+            //estilos especificos para menu clasico
+            .box-menu{
+                justify-content: flex-start;
+            }
+
+            .btn-descargar-menu{
+                border: 1.8px solid var(--c-2);
+                border-radius: 5px;
+                color: white;
+                display: block;
+                font-size: 2rem;
+                font-weight: 900;
+                height: 5rem;
+                margin-top: 2.5rem;
+                line-height: 5rem;
+                text-align: center;
+                width: 18.5rem;
+            }
+        }
+
+        //estilos generals del menu
+        li{
+            list-style: none;
+
+            .box-menu{
+                display: flex;
+                flex-direction: column;
+                padding: 1.5rem 0;
+
+                .info-menu{
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: .5rem;
+
+                    .nombre{
+                        font-size: 3rem;
+                        text-transform: capitalize;
+                        font-weight: 900;
+                        color: var(--c-2);
+                    }
+
+                    .circulos-linea{
+                        border-bottom: 4px dotted var(--c-3);
+                        height: 3rem;
+                        width: 15rem;
+                    }
+
+                    .precio{
+                        font-size: 3rem;
+                        font-family: var(--ff-title);
+                        color: var(--c-3);
+                    }
+                }
+
+                .ingredientes{
+                    font-size: 1.3rem;
+                    font-family: var(--ff-t-1);
+                    color: var(--c-3)
+                }
+            }
+        }
+
+        //menu artesanal
+
+        .menu-artesanal{
+            flex: 1 1 50%;
+            max-width: 30%;
+            //text-align: right;
+            margin-left: auto;
+
+            //titulo - menu artesanal
+            .titulo-menu{
+                color: white;
+                font-size: 5rem;
+                font-family: var(--ff-title);
+                margin-bottom: 8.5rem;
+                text-align: end;
+
+                &::after{
+                    content: "";
+                    background-color: white;
+                    display: block;
+                    margin-left: auto;
+                    height: 1rem;
+                    width: 13rem;
+                }
+            }
+
+            //estilos especificos para menu artesanal
+            .box-menu{
+                .info-menu{
+
+                    .nombre{
+                        color: white;
+                    }
+
+                    .circulos-linea{
+                        border-bottom: 4px dotted var(--c-1);
+                    }
+
+                    .precio{
+                        color: white;
+                        margin-left: 5px;
+                    }
+                }
+
+                .ingredientes{
+                    color: var(--c-1);
+                }
+            }
+
+            .btn-descargar-menu{
+                border: 1.8px solid var(--c-1);
+                border-radius: 5px;
+                color: white;
+                display: block;
+                font-size: 2rem;
+                font-weight: 900;
+                height: 5rem;
+                margin-top: 2.5rem;
+                margin-left: auto;
+                line-height: 5rem;
+                text-align: center;
+                width: 18.5rem;
+            }
+        }
+    }
+}

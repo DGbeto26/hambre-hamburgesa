@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bebas+Neue|Cabin:400,600,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/363eac32b1.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <!-- navegador -->
+        <nav class="container">
+            <div class="logo">
+                <h2>hambre</h2>
+            </div>
+            <ul class="list">
+                <a href="#">Inscribirce</a>
+            </ul>
+            <div class="btn-login">
+                <a id="login" href="#loginModal" data-toggle="modal"><i class="fas fa-hamburger"></i>Login</a>
+            </div>
+        </nav>
+
+        <!-- fondo -->
+        <div class="img-header">
+            <img src="img/fondo.png" alt="">
+        </div>
+
+        <!-- Cotenido/textos header -->
+        <div class="row container contenido-info">
+            <div class="contexto-info">
+                <h1>Disfruta de las ricas<br><span>HAMBURGUESAS</span></h1>
+
+                <div class="separador"></div>
+
+                <p class="parrafo">Las mejores hamburguesas artesanales que vas  a probar en este pais. <br> Lo que tu estomago buscaba para satisfacer lo tenemos aquí.</p>
+              
+                <a href="#" class="btn" id="btn-ver-menu">Ver el menú
+                    <span class="tooltips">Debes logiarte para ver el menú</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido dentro de Main -->
+    <main>
+
+        <!-- Perfil de usuario -->
+        <section id="perfil">
+            <div class="container row box-perfil">
+                <!-- imagenes de fondo -->
+                <img src="img/fondo-burger.png" alt="burger" class="burger">
+                <img src="img/tomate-2.png" alt="tomate" class="tomate1">
+                <img src="img/tomate-2.png" alt="tomate" class="tomate2">
+                <div class="perfil">
+                    <div class="img-perfil">
+                        <img src="img/user.jpg" alt="user">
+                    </div>
+                    <div class="nombre-perfil">
+                        <h5>Alberto Agüero</h5>
+                        <small>Cliente activo</small>
+                    </div>
+                    <a href="#" id="cerrarSesion" class="btn-cerrar-sesion">Cerrar sesión</a>
+                </div>
+                <div class="separador"></div>
+                <div class="datos">
+                    <div class="comida-favorita">
+                        <h4>Mis gustos</h4>
+                        <p class="texto-gusto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos libero repellendus commodi quibusdam. Quaerat provident tempore delectus omnis assumenda neque ab, exercitationem enim vero quam dolorum culpa aliquid distinctio.
+                        </p>
+                        <div class="intereses">
+                            <div class="icon-interes">
+                                <i class="fas fa-utensils"></i>
+                                <p>Local favorito</p>
+                            </div>
+                            <div class="icon-interes">
+                                <i class="fas fa-hamburger"></i>
+                                <p>Burger favorito</p>
+                            </div>
+                            <div class="icon-interes">
+                                <i class="fas fa-laugh-beam"></i>
+                                <p>Se siente feliz</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenedor">
+                        <div class="box-puntos">
+                            <p class="mis-puntos">Puntos de compra</p>
+                            <p class="cantidad-puntos">50<span>pt</span></p>
+                            <small>*Recuerda gastar tus puntos ante del 01/02/2020</small>
+                        </div>
+                        <div class="box-btn">
+                            <a href="#" class="btn-canje-puntos">Canjear Puntos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu de Hambre -->
+        <section id="menu">
+            <div class="img-menu">
+                <img src="img/Fondo carta.png" alt="">
+            </div>
+            <div class="row container menu">
+                <!-- Menu clasico -->
+                <div class="menu-clasico">
+                    <h2 class="titulo-menu">Clásico</h2>
+                    <ul id="menuClasico">
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">clasico</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">5pt</span>
+                                </div>
+                                <p class="ingredientes">hamburguesa - tomate - lechuga - queso</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">Royal</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">8pt</span>
+                                </div>
+                                <p class="ingredientes">hamburguesa - pepinos - tomate - lechuga - queso - huevo</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">A lo pobre</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">12pt</span>
+                                </div>
+                                <p class="ingredientes">hamburguesa de res - huevo - tomate - lechuga - platano</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">Vegetariana</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">14pt</span>
+                                </div>
+                                <p class="ingredientes">hamburguesa vegana - pepinos - tomate - lechuga</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">Ranchera</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">18pt</span>
+                                </div>
+                                <p class="ingredientes">Pollo a la ranchera - pepinos - tomate - lechuga - queso</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">Parrilera</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">22pt</span>
+                                </div>
+                                <p class="ingredientes">hamburguesa - pepinos - tomate - lechuga - tocino - jamon serrano</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">Extrema</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">25pt</span>
+                                </div>
+                                <p class="ingredientes">2 hamburguesa - pepinos - tomate - lechuga - queso - huevo - tocino - platano</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-descargar-menu">Descargar menú</a>
+                </div>
+                <!-- Menu artesanal -->
+                <div class="menu-artesanal">
+                    <h2 class="titulo-menu">Artesanal</h2>
+                    <ul id="menuClasico">
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">clasico</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">5pt</span>
+                                </div>
+                                <p class="ingredientes">hamburguesa - tomate - lechuga - queso</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">Royal</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">8pt</span>
+                                </div>
+                                <p class="ingredientes">hamburguesa - pepinos - tomate - lechuga - queso - huevo</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">A lo pobre</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">12pt</span>
+                                </div>
+                                <p class="ingredientes">hamburguesa de res - huevo - tomate - lechuga - platano</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">Vegetariana</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">14pt</span>
+                                </div>
+                                <p class="ingredientes">hamburguesa vegana - pepinos - tomate - lechuga</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">Ranchera</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">18pt</span>
+                                </div>
+                                <p class="ingredientes">Pollo a la ranchera - pepinos - tomate - lechuga - queso</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">Parrilera</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">22pt</span>
+                                </div>
+                                <p class="ingredientes">hamburguesa - pepinos - tomate - lechuga - tocino - jamon serrano</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-menu">
+                                <div class="info-menu">
+                                    <p class="nombre">Extrema</p>
+                                    <div class="circulos-linea"></div>
+                                    <span class="precio">25pt</span>
+                                </div>
+                                <p class="ingredientes">2 hamburguesa - pepinos - tomate - lechuga - queso - huevo - tocino - platano</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-descargar-menu">Descargar menú</a>
+                </div>
+            </div>
+        </section>
+    </main>
+   
+    <!-- Footer -->
+    <footer class="full-screen">
+        <div class="container">
+            <div class="logo">
+                <h2>hambre</h2>
+                <p>Av. La Libertad 215 - Jr. plaza norte</p>
+                <p>955 784 652</p>
+            </div>
+            <div class="nosotros">
+                <h5>Siempre a tu servico</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iusto obcaecati dolorem similique consectetur sapiente exercitationem veniam assumenda! Suscipit, tempora.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, ex placeat ratione velit praesentium officia.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modales -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Iniciar sesion</h5>
+                <button type="button" class="close" aria-label="Close" id="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="username" id="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" id="password" placeholder="Contraseña">
+                    </div>
+
+                    <div class="buttons">
+                        <button id="loginButton" type="button" class="btn-login-modal">Iniciar sesión</button>
+
+                        <button type="button" class="btn-signUp-modal">Singn Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+   
+    <script src="js/modal.js"></script>
+   
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+        SystemJS.config({
+            baseURL: '/',
+            defaultJSExtensions: true,
+            map: {
+                'jquery': 'node_modules/jquery/dist/jquery.js'
+            }
+        });
+        SystemJS.import('js/main.js');
+    </script>
+</body>
+</html>

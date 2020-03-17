@@ -1,0 +1,36 @@
+@import "nav";
+@import "header";
+@import "user";
+@import "menu";
+@import "footer";
+@import "modal";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-size: 10px;  
+    font-family: "Cabin";
+    text-decoration: none;
+}
+
+:root{
+    //tipografia
+    --ff-title: "Abril Fatface", cursive;
+    --ff-t-1: 'Bebas Neue', cursive;
+
+    //colores
+    --c-1: #F7C000;
+    --c-2: #450D4A;
+    --c-3: #131313;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}

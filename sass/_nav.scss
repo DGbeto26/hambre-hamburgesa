@@ -1,0 +1,64 @@
+.header{
+    height: 100vh;
+    
+    //navegador
+    nav{
+        display: flex;
+        flex-direction: row;
+        height: 90px;
+        width: 100%;
+    
+        .logo{
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            flex: 1 1 50%;
+            padding-left: 15px;
+            
+            h2{
+                font-size: 3.5rem;
+                color: white;
+                font-family: var(--ff-title);
+            }
+        }
+    
+        .list{
+            align-items: center;
+            display: flex;
+            flex-flow: row nowrap;
+            flex: 1 1 33.333333%;
+            max-width: 33.333333%;
+            justify-content: flex-end;
+            height: 100%;
+    
+            a{
+                list-style: none;
+                font-size: 1.5rem;
+                color: white;
+            }
+        }
+    
+        .btn-login{
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex: 1 1 16.666667%;
+            max-width: 16.666667%;
+            justify-content: flex-end;
+            padding-right: 15px;
+    
+            a{
+                font-size: 1.5rem;
+                color: white;
+
+                i{
+                    margin-right: .5rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+

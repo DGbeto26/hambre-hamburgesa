@@ -1,0 +1,56 @@
+//footer
+.full-screen{
+    background-color: var(--c-3);
+    width: 100%;
+    height: 25rem;
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .logo{
+            width: 33.3%;
+            display: flex;
+            flex: 0 1 33.333%;
+            padding-top: 80px;
+            flex-direction: column;
+
+            h2{
+                text-transform: uppercase;
+                font-size: 3.5rem;
+                color: white;
+                font-family: var(--ff-title);
+            }
+
+            p{
+                font-size: 2rem;
+                color: rgb(190, 190, 190);
+
+                &:nth-child(2){
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        .nosotros{
+            width: 33.3%;
+            display: flex;
+            flex: 0 1 33.333%;
+            padding-top: 80px;
+            flex-direction: column;
+
+            h5{
+                color: white;
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+
+            p{
+                color: rgb(190, 190, 190);
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
